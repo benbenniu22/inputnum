@@ -7,10 +7,10 @@ function App(){
     return (
         <div>
             <InputNumber size='large'
-                         max={10}
+                         min={0}
                          value={value}
-                         onChange={e=>{
-                            setValue(e.target.value)
+                         onChange={val=>{
+                            setValue(val)
                         }}
             />
         </div>
